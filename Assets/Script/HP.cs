@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HP : MonoBehaviour {
+    public GameObject deathCanvas;
     public Slider HealthSlider;
+    public Slider HealthSlider2;
     public Text healthText;
     public int health = 10;
     float timer = 0.0f;
      void Start()
     {
         HealthSlider.GetComponent<Slider>().value = health;
+        HealthSlider2.GetComponent<Slider>().value = health;
         healthText.GetComponent<Text>().text = "Health: " + health;
     }
     private void Update()
@@ -26,11 +29,12 @@ public class HP : MonoBehaviour {
             health--;
             healthText.GetComponent<Text>().text = "Health: " + health;
             HealthSlider.GetComponent<Slider>().value = health;
+            HealthSlider2.GetComponent<Slider>().value = health;
         }
         if (health <= 0)
         {
-            //reload level
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            deathCanvas.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 
@@ -42,11 +46,13 @@ public class HP : MonoBehaviour {
             health--;
             healthText.GetComponent<Text>().text = "Health: " + health;
             HealthSlider.GetComponent<Slider>().value = health;
+            HealthSlider2.GetComponent<Slider>().value = health;
         }
         if (health <= 0)
         {
-            //reload level
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);   
+            
+            deathCanvas.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
