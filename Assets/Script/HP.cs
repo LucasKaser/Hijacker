@@ -21,12 +21,12 @@ public class HP : MonoBehaviour {
     {
         timer += Time.deltaTime;
     }
-    void OnCollisionEnter(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy" && timer > 1.0)
         {
             timer = 0;
-            health--;
+            health -= 5;
             healthText.GetComponent<Text>().text = "Health: " + health;
             HealthSlider.GetComponent<Slider>().value = health;
             HealthSlider2.GetComponent<Slider>().value = health;
@@ -38,12 +38,12 @@ public class HP : MonoBehaviour {
         }
     }
 
-    void OnCollisionPersist(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy" && timer > 1.0)
         {
             timer = 0;
-            health--;
+            health -= 5;
             healthText.GetComponent<Text>().text = "Health: " + health;
             HealthSlider.GetComponent<Slider>().value = health;
             HealthSlider2.GetComponent<Slider>().value = health;
