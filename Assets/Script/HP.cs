@@ -13,6 +13,7 @@ public class HP : MonoBehaviour {
     float timer = 0.0f;
      void Start()
     {
+        Time.timeScale = 1;
         HealthSlider.GetComponent<Slider>().value = health;
         HealthSlider2.GetComponent<Slider>().value = health;
         healthText.GetComponent<Text>().text = "Health: " + health;
