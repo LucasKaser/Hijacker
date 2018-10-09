@@ -8,9 +8,9 @@ public class EnemyHP : MonoBehaviour
 
     public int health = 10;
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "bullet")
+        if (collision.gameObject.tag == "Bullet")
         {
             health--;
         }

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 96705188645098358}
   m_Layer: 8
   m_Name: CannonBall (3)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 96459710838814704}
   m_Layer: 8
   m_Name: CannonBall (5)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 96093295617319148}
   m_Layer: 8
   m_Name: CannonBall (4)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 96702944930996042}
   m_Layer: 8
   m_Name: CannonBall (1)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 50983688007849652}
   - component: {fileID: 70837271839578594}
   - component: {fileID: 96824163216631144}
+  - component: {fileID: 114758272006778612}
   m_Layer: 8
   m_Name: Cannon ball
   m_TagString: Bullet
@@ -115,7 +116,7 @@ GameObject:
   - component: {fileID: 96029089388294114}
   m_Layer: 8
   m_Name: CannonBall (2)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -865,6 +866,17 @@ TrailRenderer:
   m_MinVertexDistance: 1e-10
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &114758272006778612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1488568110636928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 719fae0d748ade043b6568937edb2ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212057507653694750
 SpriteRenderer:
   m_ObjectHideFlags: 1
