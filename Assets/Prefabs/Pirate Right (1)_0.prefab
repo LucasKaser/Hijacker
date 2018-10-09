@@ -21,15 +21,15 @@ GameObject:
   - component: {fileID: 4238668883684150}
   - component: {fileID: 212109858724136464}
   - component: {fileID: 95042265456853082}
-  - component: {fileID: 61480860331227324}
   - component: {fileID: 50551317693870904}
   - component: {fileID: 114543634472888626}
   - component: {fileID: 114687574553385964}
   - component: {fileID: 114212930485609360}
   - component: {fileID: 114660968259632290}
-  m_Layer: 0
+  - component: {fileID: 60962791087260732}
+  m_Layer: 9
   m_Name: Pirate Right (1)_0
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4562531144539064}
   - component: {fileID: 20199239225909368}
   - component: {fileID: 81815993219718690}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -57,14 +57,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1049824454289280}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48, y: -0.68, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.000011706723, z: -0, w: 1}
+  m_LocalPosition: {x: 45.38, y: 3.75, z: 0}
+  m_LocalScale: {x: 2.97359, y: 2.97359, z: 2.97359}
   m_Children:
   - {fileID: 4562531144539064}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.001, z: 0}
 --- !u!4 &4562531144539064
 Transform:
   m_ObjectHideFlags: 1
@@ -72,8 +72,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1475616983655426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.48, y: 0.68, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.02, y: -0.01, z: -10}
+  m_LocalScale: {x: 1.002215, y: 1.002215, z: 1.002215}
   m_Children: []
   m_Father: {fileID: 4238668883684150}
   m_RootOrder: 0
@@ -102,7 +102,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 9.261467
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -137,9 +137,9 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &61480860331227324
-BoxCollider2D:
+  m_Constraints: 4
+--- !u!60 &60962791087260732
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -160,9 +160,64 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.16673923, y: 0.40902355}
+      - {x: -0.16678648, y: 0.31813708}
+      - {x: -0.37882975, y: 0.31824458}
+      - {x: -0.3788913, y: 0.2879677}
+      - {x: -0.31822398, y: 0.28793663}
+      - {x: -0.3181584, y: -0.015160399}
+      - {x: -0.3788731, y: -0.0151145}
+      - {x: -0.3788123, y: -0.045473244}
+      - {x: -0.37894467, y: -0.076063104}
+      - {x: -0.43929678, y: -0.07577434}
+      - {x: -0.43951327, y: -0.105941184}
+      - {x: -0.46922943, y: -0.10606135}
+      - {x: -0.46982872, y: -0.25748914}
+      - {x: -0.49946687, y: -0.25761947}
+      - {x: -0.49909255, y: -0.49856788}
+      - {x: -0.24984439, y: -0.5007798}
+      - {x: 0.18099949, y: -0.4990746}
+      - {x: 0.21563165, y: -0.49780515}
+      - {x: 0.49858654, y: -0.4984965}
+      - {x: 0.49899867, y: -0.28931224}
+      - {x: 0.40826786, y: -0.28764123}
+      - {x: 0.40906864, y: -0.19702102}
+      - {x: 0.439358, y: -0.19698669}
+      - {x: 0.4394095, y: -0.16666247}
+      - {x: 0.46968523, y: -0.16666752}
+      - {x: 0.4697173, y: -0.07578103}
+      - {x: 0.40903792, y: -0.075756274}
+      - {x: 0.4092098, y: -0.10611989}
+      - {x: 0.37875515, y: -0.10610634}
+      - {x: 0.37877092, y: -0.13638286}
+      - {x: 0.28798804, y: -0.13641666}
+      - {x: 0.28788403, y: -0.16652621}
+      - {x: 0.13639767, y: -0.16662543}
+      - {x: 0.13637237, y: -0.07573802}
+      - {x: 0.2273019, y: -0.07577164}
+      - {x: 0.22723289, y: 0.13637672}
+      - {x: 0.1969454, y: 0.13638268}
+      - {x: 0.19689856, y: 0.16660735}
+      - {x: 0.13632613, y: 0.16673782}
+      - {x: 0.13632481, y: 0.22717775}
+      - {x: 0.16670944, y: 0.22730207}
+      - {x: 0.16664107, y: 0.2879276}
+      - {x: 0.13614735, y: 0.28791547}
+      - {x: 0.13638882, y: 0.31811106}
+      - {x: 0.10606388, y: 0.3180422}
+      - {x: 0.1059412, y: 0.28790048}
+      - {x: 0.07575808, y: 0.28787953}
+      - {x: 0.075748876, y: 0.22727641}
+      - {x: 0.106058575, y: 0.22728057}
+      - {x: 0.10602496, y: 0.16672426}
+      - {x: 0.04512703, y: 0.16679506}
+      - {x: 0.045482032, y: 0.28787464}
+      - {x: 0.015131531, y: 0.28778175}
+      - {x: 0.0151113495, y: 0.31823412}
+      - {x: -0.1361785, y: 0.31820023}
+      - {x: -0.13639507, y: 0.40893483}
 --- !u!81 &81815993219718690
 AudioListener:
   m_ObjectHideFlags: 1
@@ -210,9 +265,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2e8b0358dbee3b4aa43f21faf3b37d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathCanvas: {fileID: 0}
   HealthSlider: {fileID: 0}
+  HealthSlider2: {fileID: 0}
   healthText: {fileID: 0}
-  health: 10
+  health: 100
 --- !u!114 &114660968259632290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,9 +281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8855addbeeb6f419c148bb76e57d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletLife: 0
+  bulletLife: 5
   bulletSpeed: 5
-  fireSpeed: 0
+  fireSpeed: 2
   prefab: {fileID: 1488568110636928, guid: f35425575a8a93f4794b953501a7a530, type: 2}
 --- !u!114 &114687574553385964
 MonoBehaviour:

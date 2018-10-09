@@ -8,6 +8,7 @@ public class Shoot : MonoBehaviour {
     public float fireSpeed;
     float timer = 0;
     public GameObject prefab;
+    public GameObject player1;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,10 +18,10 @@ public class Shoot : MonoBehaviour {
 	void Update () {
         timer += Time.deltaTime;
          
-        if (Input.GetButton("Fire1") && timer > fireSpeed)
+        if (timer > fireSpeed)
         {
             timer = 0;
-            Vector3 mousePosition = Input.mousePosition;
+            Vector3 playerPosition = player1.transform.position;
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
             mousePosition.z = 0;
             Vector3 shootDir = mousePosition - transform.position;
