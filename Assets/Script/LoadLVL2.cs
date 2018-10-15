@@ -8,7 +8,7 @@ public class LoadLVL2 : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "player")
         {
             // attach to the object ending the game, not the player
             SceneManager.LoadScene("Level2");
