@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HP : MonoBehaviour {
+    public GameObject PauseMenu;
     public GameObject deathCanvas;
     public Slider HealthSlider;
     public Slider HealthSlider2;
@@ -51,7 +52,7 @@ public class HP : MonoBehaviour {
         }
         if (health <= 0)
         {
-            
+            Destroy(PauseMenu);
             deathCanvas.SetActive(true);
             Time.timeScale = 0;
         }
