@@ -8,6 +8,8 @@ TagManager:
   - player
   - Bullet
   - EnemyBoat
+  - Start
+  - Quit
   layers:
   - Default
   - TransparentFX
