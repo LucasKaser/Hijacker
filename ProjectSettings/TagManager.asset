@@ -10,6 +10,7 @@ TagManager:
   - EnemyBoat
   - Start
   - Quit
+  - Turret
   layers:
   - Default
   - TransparentFX
