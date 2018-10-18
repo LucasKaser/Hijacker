@@ -11,9 +11,11 @@ public class TurretCount : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(GameObject.FindGameObjectsWithTag("Turret") == null)
+		if(GameObject.FindGameObjectWithTag("Turret") == null)
         {
             SceneManager.LoadScene("FinalBoss");
         }
+        GameObject g = GameObject.FindGameObjectWithTag("Turret");
+        Debug.Log(g.name);
 	}
 }
