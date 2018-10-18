@@ -7,7 +7,7 @@ public class WinGame : MonoBehaviour {
 
     public void Update()
     {
-        if(GameObject.FindGameObjectsWithTag("Turret") == null)
+        if(GameObject.FindGameObjectWithTag("Turret") == null)
         {
             SceneManager.LoadScene("Win");
         }
