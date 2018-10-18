@@ -5,14 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class WinGame : MonoBehaviour {
 
-     void OnCollisionEnter2D(Collision2D collision)
+    public void Update()
     {
-        if(collision.gameObject.tag == "Player")
+        if(GameObject.FindGameObjectsWithTag("Turret") == null)
         {
-            // attach to the object ending the game, not the player
             SceneManager.LoadScene("Win");
         }
-        
     }
 
 }
