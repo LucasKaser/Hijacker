@@ -12,7 +12,8 @@ public class HP : MonoBehaviour {
     public Text healthText;
     public int health = 10;
     float timer = 0.0f;
-     void Start()
+    public AudioClip soundToPlay;
+    void Start()
     {
         Time.timeScale = 1;
         HealthSlider.GetComponent<Slider>().value = health;
@@ -29,6 +30,7 @@ public class HP : MonoBehaviour {
         {
             timer = 0;
             health -= 5;
+            Camera.main.GetComponent<AudioSource>().PlayOneShot(soundToPlay);
             healthText.GetComponent<Text>().text = "Health: " + health;
             HealthSlider.GetComponent<Slider>().value = health;
             HealthSlider2.GetComponent<Slider>().value = health;
